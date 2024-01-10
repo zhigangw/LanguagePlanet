@@ -12,15 +12,15 @@ const router = createRouter({
             name: 'front-door',
             path: '/',
             meta: {
-                title: 'Lingyuan\'s personal webpage',
+                title: 'Language Planet\'s official webpage',
                 metaTags: [
                     {
                         name: 'description',
-                        content: 'The home page of Lingyuan Yan\'s webpage.'
+                        content: 'The official page of Language Planet, a NPO for improving the diversity of the lanuages on our planet.'
                     },
                     {
                         property: 'og:description',
-                        content: 'The home page of Lingyuan Yan\'s webpage.'
+                        content: 'The official page of Language Planet, a NPO for improving the diversity of the lanuages on our planet.'
                     }
                 ],
             },
