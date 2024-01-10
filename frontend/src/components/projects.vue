@@ -1,11 +1,11 @@
 <template>
-    <div id="footer">
-        <p class="copy-right">@language planet, Coded by Lingyuan Yan</p>
+    <div id="projectsSection" class="backContainer">
+        projects
     </div>
 </template>
 <script>
 export default {
-    name: "FooterGuest",
+    name: "projects",
     components: {},
     computed: {},
     methods: {
@@ -14,7 +14,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.copy-right {
-    background: #2B70C9;
-}
 </style>
