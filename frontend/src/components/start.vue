@@ -7,9 +7,10 @@
             <div class="book-container">
                 <img class="book-image" src="../assets/images/an-introduction-to-linguistics.png">
                 <div class="book-title-container">
-                    <a class="book-link" href="https://a.co/d/dBPZVvw" target="_blank"><span class="book-title-span">An
-                            Introduction To
-                            Linguistics</span></a>
+                    <span class="book-title-span">An
+                        Introduction To
+                        Linguistics</span><a class="book-link" href="https://a.co/d/dBPZVvw" target="_blank"><img
+                            class="book-link-image" src="../assets/images/link.png"></a>
                 </div>
                 <p class="book-summary">This is a great start for everyone who has an interest in understanding what
                     linguistics is about. After reading the book, you will know what a language is, and what elements of a
@@ -19,9 +20,9 @@
             <div class="book-container">
                 <img class="book-image" src="../assets/images/language-in-thought-and-action.png">
                 <div class="book-title-container">
-                    <a class="book-link" href="https://a.co/d/gKMMhLE" target="_blank"><span
-                            class="book-title-span">Language in
-                            Thought and Action</span></a>
+                    <span class="book-title-span">Language in
+                        Thought and Action</span><a class="book-link" href="https://a.co/d/gKMMhLE" target="_blank"><img
+                            class="book-link-image" src="../assets/images/link.png"></a>
                 </div>
                 <p class="book-summary">This is a book about semantics. In fact, it is more a book teaching people how to
                     use language to express in a well form than an academic one. Once you read the book, you will be amazed
@@ -32,9 +33,10 @@
             <div class="book-container">
                 <img class="book-image" src="../assets/images/the-horse-the-wheel-and-language.png">
                 <div class="book-title-container">
-                    <a class="book-link" href="https://a.co/d/3m2sTRP" target="_blank"> <span class="book-title-span">The
-                            Horse, the Wheel,
-                            and Language</span></a>
+                    <span class="book-title-span">The
+                        Horse, the Wheel,
+                        and Language</span> <a class="book-link" href="https://a.co/d/3m2sTRP" target="_blank"><img
+                            class="book-link-image" src="../assets/images/link.png"> </a>
                 </div>
                 <p class="book-summary">Roughly half the world's population speaks languages derived from a shared
                     linguistic source known as Proto-Indo-European. But who were the early speakers of this ancient mother
@@ -96,7 +98,8 @@ export default {
 }
 
 .book-title-container {
-    @extend .container;
+    @extend .flex-row-container;
+    @extend .justify-content-between;
     @extend .w-100;
 }
 
@@ -109,10 +112,15 @@ export default {
     text-align: left;
     color: #222222;
     @extend .text-truncate;
+    @extend .w-90;
 }
 
 .book-link {
-    color: #FF9900;
+    @extend .w-10;
+}
+
+.book-link-image {
+    background-color: #FF9900;
 }
 
 .book-summary {
