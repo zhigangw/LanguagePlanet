@@ -1,5 +1,6 @@
 <template>
     <div id="mottoSection" class="backContainer">
+        <div class="motto-container"></div>
         <p class="motto-text">“ A language, then is a medium of communication specific to a society; it forms part of the
             culture of that
             society. “</p>
@@ -20,6 +21,10 @@ export default {
 .backContainer {
     @extend .container;
     @extend .my-3;
+}
+
+.motto-container {
+    @extend .container;
 }
 
 .motto-text {
