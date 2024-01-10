@@ -47,6 +47,8 @@ export default {
     line-height: 44px;
     letter-spacing: 0em;
     text-align: left;
+    color: #2B70C9;
+
 }
 
 .linkBox {
@@ -62,6 +64,8 @@ export default {
     letter-spacing: 0em;
     text-align: left;
     @extend .mx-2;
+    color: #222222;
+
 }
 
 a:hover {
