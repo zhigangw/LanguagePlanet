@@ -33,8 +33,6 @@ export default {
 }
 .body-header {
   width: 100%;
-  height: 5vmax;
-  background: #1CB0F6;
 }
 .body-main {
   margin-top: 0px;

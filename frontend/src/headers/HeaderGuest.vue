@@ -1,9 +1,9 @@
 <template>
-    <div class="header-bar">
-        <div class="header-bar-left">
-            <h2 class="header-title">Language Planet</h2>
-        </div>
-        <div class="header-bar-right">
+    <div class="header-container">
+        <div class="header-bar">
+            <div class="header-bar-left">
+                <p class="header-title">Language Planet</p>
+            </div>
             <div class="linkBox">
                 <router-link class="routerLink" to="#" v-scroll-to="'#aboutMeSection'">About Me</router-link>
                 <router-link class="routerLink" to="#" v-scroll-to="'#myHobbiesSection'">My Interests</router-link>
@@ -25,50 +25,42 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.header-container{
+    @extend .container;
+    @extend .p-3;
+}
 .header-bar {
     @extend .flex-row-container;
     @extend .justify-content-between;
+    @extend .w-90;
+    @extend .mx-3;
 }
 
 .header-bar-left {
     @extend .container;
 }
 
-.header-bar-right {
-    @extend .container;
+.header-title {
+    font-family: Noto Sans;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .linkBox {
-    @extend .d-flex;
+    @extend .flex-row-container;
     @extend .justify-content-end;
 }
 
 a {
-
-    /* Title3 | Black */
-
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 21px;
-    line-height: 36px;
-    text-decoration: none;
-
-
-    /* identical to box height, or 150% */
-    text-align: center;
-
-    /*padding*/
-    @extend .mx-3;
-    /* White */
-    color: #FFFFFF;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 a:hover {
