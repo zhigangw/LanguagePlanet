@@ -5,11 +5,10 @@
                 <p class="header-title">Language Planet</p>
             </div>
             <div class="linkBox">
-                <router-link class="routerLink" to="#" v-scroll-to="'#aboutMeSection'">About Me</router-link>
-                <router-link class="routerLink" to="#" v-scroll-to="'#myHobbiesSection'">My Interests</router-link>
-                <router-link class="routerLink" to="#" v-scroll-to="'#myProjectsSection'">Projects &
-                    Achievements</router-link>
-                <router-link class="routerLink" to="#" v-scroll-to="'#photoGallerySection'">Photo Gallery</router-link>
+                <router-link class="routerLink" to="#" v-scroll-to="'#myHobbiesSection'">Founder</router-link>
+                <router-link class="routerLink" to="#" v-scroll-to="'#aboutMeSection'">Materials</router-link>
+                <router-link class="routerLink" to="#" v-scroll-to="'#photoGallerySection'">Projects</router-link>
+                <router-link class="routerLink" to="#" v-scroll-to="'#myProjectsSection'">Participate</router-link>
             </div>
         </div>
     </div>
@@ -25,10 +24,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.header-container{
+.header-container {
     @extend .container;
     @extend .p-3;
 }
+
 .header-bar {
     @extend .flex-row-container;
     @extend .justify-content-between;
@@ -54,13 +54,14 @@ export default {
     @extend .justify-content-end;
 }
 
-a {
+.routerLink {
     font-family: Noto Sans;
     font-size: 20px;
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
+    @extend .mx-2;
 }
 
 a:hover {
