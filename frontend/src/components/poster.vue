@@ -16,11 +16,11 @@ export default {
 <style scoped lang="scss">
 .backContainer {
     @extend .container;
-    @extend .px-3;
+    @extend .my-3;
 }
 
 .poster-image {
-    @extend .mx-3;
+    @extend .mx-auto;
     @extend .w-90;
     padding: 10px;
     border-radius: 8px;
