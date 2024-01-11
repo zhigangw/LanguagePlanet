@@ -5,10 +5,10 @@
                 <p class="header-title">Language Planet</p>
             </div>
             <div class="linkBox">
-                <router-link class="routerLink" to="#" v-scroll-to="'#myHobbiesSection'">Founder</router-link>
-                <router-link class="routerLink" to="#" v-scroll-to="'#aboutMeSection'">Materials</router-link>
-                <router-link class="routerLink" to="#" v-scroll-to="'#photoGallerySection'">Projects</router-link>
-                <router-link class="routerLink" to="#" v-scroll-to="'#myProjectsSection'">Participate</router-link>
+                <router-link class="routerLink" to="#" v-scroll-to="'#founderSection'">Founder</router-link>
+                <router-link class="routerLink" to="#" v-scroll-to="'#mottoSection'">Materials</router-link>
+                <router-link class="routerLink" to="#" v-scroll-to="'#projectsSection'">Projects</router-link>
+                <router-link class="routerLink" to="#" v-scroll-to="'#participateSection'">Participate</router-link>
             </div>
         </div>
     </div>
@@ -54,6 +54,7 @@ export default {
 .linkBox {
     @extend .flex-row-container;
     @extend .justify-content-end;
+    @extend .flex-wrap;
 }
 
 .routerLink {
